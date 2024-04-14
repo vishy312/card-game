@@ -1,0 +1,20 @@
+.card {
+  width: 24vw;
+  height: 22vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: rgb(199, 31, 31);
+  transition: transform 0.5s;
+  cursor: pointer;
+}
+
+.rotated {
+  transform: rotateY(180deg);
+  background-color: rgb(7, 173, 173);
+}
+
+.hidden {
+  visibility: hidden;
+}

@@ -1,0 +1,54 @@
+#root {
+  text-align: center;
+  margin-inline: auto;
+}
+
+.game-screen {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 1.5px;
+}
+
+.start-game-btn {
+  margin-block: 10px 5px;
+}
+
+.timer {
+  width: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 5px;
+  background-color: red;
+  z-index: 2;
+  animation: timerAnimation 30s linear forwards; /* game time is kept 30s*/
+}
+
+@keyframes timerAnimation {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 100%;
+  }
+}
+
+.results {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: teal;
+  color: white;
+  font-size: 5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.play-again-btn {
+  font-size: 16px;
+}
